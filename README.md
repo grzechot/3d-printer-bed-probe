@@ -18,7 +18,7 @@ This work is licensed under a
 
 ## Parts:
 - printable: Flag6.stl and ZSuport6.stl. Recommended material - ABS. PETG might warp close to heat sources like extruder motor.
-- optosensor 5V - somthing like that: https://www.amazon.de/-/en/Endstop-OptoEndstop-Optical-Mendel-Printers/dp/B08S7FQCJ8
+- optosensor 5V - something like that: https://www.amazon.de/-/en/Endstop-OptoEndstop-Optical-Mendel-Printers/dp/B08S7FQCJ8
 - 7x3x3 bearing 2pcs
 - 5x5mm brass heat insert with collar
 - 3mm steel ball 
@@ -30,9 +30,9 @@ I`ve came with that idea obout year 2013. Here you see prototype, working as pre
 ![Alt text](/OldProbe.png)
 photo
 
-After 13 years it's still working fine with no issues. But mounted to the frame can't be used to do a mesh bed probe. So I had to redesign a little.
+After 13 years it's still working fine with no issues. But mounted to the frame can't be used to do a mesh bed probe. So I had to redesign a little. The red one is printed in PETG, and it started to warp from extruder motor heat. ABS recommended. 
 ![Alt text](/Evolutions.png)
-The principle is simple. Because the accuracy of OptoEndStop is around 0.05 to 0.1mm it's far not enough to work as ZEndStop. But if we use a leverage, we can enhance accuracy by leverage ratio. I use ratio 1:12, whitch is enough to measure with 0.003mm accuracy. If we extend the lenght of the scythe, the accuracy might be better. The practical limit is a height from a nozzle to a top of an extruder motor.
+The principle is simple. Because the accuracy of OptoEndStop is around 0.05 to 0.1mm. It's far not enough to work as ZEndStop. But if we use a leverage, we can enhance accuracy by leverage ratio. I use ratio 1:12, whitch is enough to measure with 0.003mm accuracy. If we extend the lenght of the scythe, the accuracy might be better. The practical limit is a height from a nozzle to a top of an extruder motor.
 After developing several versions, I came to the point of "good enough, ready to publish". And here it is:
 
 ## Assembly instructions:
@@ -63,12 +63,12 @@ The most difficult part: find the place at your extruder, where a mount is possi
 
 Connect, configure (simple endstop, Z offset about 1mm, normally open), test. Rotate ZFlag to open position. LED must be on, and controller must report open state of the OptoSensor. After turning ZFlag less then 1mm on the upper side, the led must turn off.
 
-Position the closed probe (probe deretracted) about 1mm above nozzle tip. Rotate ZFlag to open state. The ball should be about 1mm below the nozzle tip.
+Position the closed probe (ZFlag deretracted, magnetically locked) about 1mm above nozzle tip. Rotate ZFlag to open state. The ball should be about 1mm below the nozzle tip.
 
 Calibrate traditionally using thin paper.
 
 While probing, XY accelerations must be around 2000mm/s^2, because it may trigger the probe. But even with that limitation the probe can measure 6x6 grid in less than 3 minutes! Anyway, most aluminium plated beds change shape and height while heating, while stabilizing temperature, and even midprint. You can measure this with my probe. Have fun!
 
-Here is 21x21 grid of my imperfect bed. Configuration: M588 A5 S0.003. And day after day it looks similar, whitch means the probe is working great!.
+Here is 21x21 grid of my imperfect bed. RRF configuration: M588 A5 S0.003. And day after day it looks similar, whitch means the probe is working great!.
 
 ![Alt text](Zcythe441.png)
