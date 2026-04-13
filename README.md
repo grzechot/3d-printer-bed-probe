@@ -54,9 +54,13 @@ Prepare ZSupport by removing printed supports. Press fit OptoSensor. One M3x6mm 
 
 Paint with black or silver surfaces on the photo. Cut 0.5mm of the edge.
 
-![Alt text](PaintedSurfaces.png)
 
-Heat press the brass insert. The narrow part stays outside. Screw with M3x10mm bolt Zscythe to the Zsupport. Check bearings work. It should rotate without any resistance. Check spaces between painted surfaces and OptoSensor. It can not touch each other. Adjust the mount of the brass insert eventually.
+
+Heat press the brass insert. The narrow part stays outside. 
+
+![Alt text](BrassInsert.png)
+
+Screw with M3x10mm bolt Zscythe to the Zsupport. Check bearings work. It should rotate without any resistance. Check spaces between painted surfaces and OptoSensor. It can not touch each other. Adjust the mount of the brass insert eventually.
 
 Test magnets. The arm should be magnetically atrracted from about half of its travel, and locked in closed state. Orient Zcythe vertically, push ZFlag gently, it should rotate to open state. Repeat many times :) Play with it as it's a fidget, because that assembly must withstand tens thounsands off cycles. 
 
