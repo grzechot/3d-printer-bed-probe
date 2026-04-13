@@ -54,7 +54,7 @@ Prepare ZSupport by removing printed supports. Press fit OptoSensor. One M3x6mm 
 
 Paint with black or silver surfaces on the photo. Cut 0.5mm of the edge.
 
-
+![Alt text](PaintedSurfaces.png)
 
 Heat press the brass insert. The narrow part stays outside. 
 
