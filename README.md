@@ -28,10 +28,11 @@ This work is licensed under a
 I`ve came with that idea about year 2013. Here you see prototype, working as precise ZEndStop, fitted in my old 3d printer:
 
 ![Alt text](/OldProbe.png)
-photo
 
 After 13 years it's still working fine with no issues. But mounted to the frame can't be used to do mesh bed probing. So I had to redesign a little. The red one is printed in PETG, and it started to warp from extruder motor heat. ABS recommended. 
+
 ![Alt text](/Evolutions.png)
+
 The principle is simple. Because the accuracy of OptoEndStop is around 0.05 to 0.1mm. It's far not enough to work as ZEndStop. But if we use a leverage, we can enhance accuracy by leverage ratio. I use ratio about 1:12, whitch is enough to measure with 0.003mm accuracy. If we extend the lenght of the scythe, the accuracy might be better. The practical limit is a height from a nozzle to a top of an extruder motor.
 After developing several versions, I came to the point of "good enough, ready to publish". And here it is:
 
@@ -41,11 +42,9 @@ Press both bearings into the slot in the ZFlag. Leave no space between two of th
 
 Heat press the ball, close holes between the ball and plastic part. Make sure tha ball will not fall out.
 
-![Alt text](ball.png)
-
 Heat press magnets to both parts, similar to brass insert. Mind the polarity!
 
-The socket of the EndStop must be desoldered, and soldered on the same side as OptoSensor.
+The socket of the EndStop have to be desoldered, and soldered on the same side as OptoSensor.
 
 Prepare ZSupport by removing printed supports. Press fit OptoSensor. One M3x6mm bolt is enough to secure. When preparing cables, mind polarity!
 
@@ -55,16 +54,22 @@ Paint with black or silver surfaces on the photo. Cut 0.5mm of the edge.
 
 Heat press the brass insert. The narrow part stays outside. Screw with M3x10mm bolt Zscythe to the Zsupport. Check bearings work. It should rotate without any resistance. Check spaces between painted surfaces and OptoSensor. It can not touch each other. Adjust the mount of the brass insert eventually.
 
-Test magnets. The arm should be magnetically atrracted from about half of its travel, and locked in closed state. Orient Zcythe vertically, push ZFlag gently, it shuld rotate to open state. Repeat many times :) Play with it as it's a fidget, because that assembly must withstand tens thounsands off cycles. 
+Test magnets. The arm should be magnetically atrracted from about half of its travel, and locked in closed state. Orient Zcythe vertically, push ZFlag gently, it should rotate to open state. Repeat many times :) Play with it as it's a fidget, because that assembly must withstand tens thounsands off cycles. 
 
 The most difficult part: find the place at your extruder, where a mount is possible. Create support for your extruder to the Zcythe. Soon I will post mounts for Voron and RatRig.
 
-## Launch
+## Configure
 
-Connect, configure (simple endstop, Z offset about 1mm, normally open), test. Rotate ZFlag to open position. LED must be on, and controller must report open state of the OptoSensor. After turning ZFlag less then 1mm on the upper side, the led must turn off.
+Connect, configure (simple endstop, Z offset about 1mm, normally open).
 
-Position the closed probe (ZFlag deretracted, magnetically locked) about 1mm above nozzle tip. Rotate ZFlag to open state. The ball should be about 1mm below the nozzle tip.
+## Test
+Rotate ZFlag to open position. LED must be on, and controller must report open state of the OptoSensor.
+After turning ZFlag less then 1mm on the upper side, the led must turn off.
+Repeat many times.
 
+## Position and launch
+
+The closed probe (ZFlag deretracted, magnetically locked) shoul be about 1mm above nozzle tip. Rotate ZFlag to open state. The ball should be about 1mm below the nozzle tip. Secure with two bolts. Don't overtighten.
 Calibrate traditionally using thin paper.
 
 While probing, XY accelerations must be around 2000mm/s^2, because it may trigger the probe. But even with that limitation the probe can measure 6x6 grid in less than 3 minutes! Anyway, most aluminium plated beds change shape and height while heating, while stabilizing temperature, and even midprint. You can measure this with my probe. Have fun!
