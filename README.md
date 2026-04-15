@@ -85,4 +85,4 @@ While probing, XY accelerations must be around 2000mm/s^2, because it may trigge
 
 Here is 21x21 grid of my imperfect bed. RRF configuration: M588 A5 S0.003. And day after day it looks similar, whitch means the probe is working great!.
 
-![Alt text](Zcythe441.png)
+![Alt text](/pic/Zcythe441.png)
