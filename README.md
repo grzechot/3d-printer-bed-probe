@@ -27,15 +27,15 @@ https://www.youtube.com/watch?v=oTdeM-AWUHY
 - 5x5mm brass heat insert with collar.
 - 3mm steel ball 
 - 0.5x5mm magnet 2pcs. It can sourced from OCB cigarette paper package.
-![Alt text](Assembly.png)
+![Alt text](/pic/Assembly.png)
 
 I`ve came with that idea about year 2013. Here you see prototype, working as precise ZEndStop, fitted in my old 3d printer:
 
-![Alt text](/OldProbe.png)
+![Alt text](/pic/OldProbe.png)
 
 After 13 years it's still working fine with no issues. But mounted to the frame can't be used to do mesh bed probing. So I had to redesign a little. The red one is printed in PETG, and it started to warp from extruder motor heat. ABS recommended. 
 
-![Alt text](/Evolutions.png)
+![Alt text](/pic/Evolutions.png)
 
 The principle is simple. Because the accuracy of OptoEndStop is around 0.05 to 0.1mm. It's far not enough to work as ZEndStop. But if we use a leverage, we can enhance accuracy by leverage ratio. I use ratio about 1:12, whitch is enough to measure with 0.003mm accuracy. If we extend the lenght of the scythe, the accuracy might be better. The practical limit is a height from a nozzle to a top of an extruder motor.
 After developing several versions, I came to the point of "good enough, ready to publish". And here it is:
@@ -54,11 +54,11 @@ Prepare ZSupport by removing printed supports. Press fit OptoSensor. One M3x6mm 
 
 Paint with black or silver surfaces on the photo. Cut 0.5mm of the edge.
 
-![Alt text](PaintedSurfaces.png)
+![Alt text](/pic/PaintedSurfaces.png)
 
 Heat press the brass insert. The narrow part stays outside. 
 
-![Alt text](BrassInsert.png)
+![Alt text](/pic/BrassInsert.png)
 
 Screw with M3x10mm bolt ZFlag to the ZSupport. Check bearings work. It should rotate without any resistance. Check spaces between painted surfaces and OptoSensor. It can not touch each other. Adjust the mount of the brass insert eventually.
 
